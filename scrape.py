@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
+
 def get_social_from_website(url):
     """
     find the social media links from a webpage and return them as a dictionary
@@ -26,6 +27,8 @@ def get_social_from_website(url):
     return social_links
 
 
-
 urls = get_social_from_website('https://convurt.io')
-print(urls)
+#print(urls)
+#print(urls['facebook'])
+for i, x in urls.items():
+    print(i, x )
